@@ -21,4 +21,29 @@ console.log(typeof language); */
 const country = 'Romania';
 const continent = 'Europe';
 const language = 'Romanian';
-const isIsland = false;
+const isIsland = false; 
+
+//=======BASIC OPERATORS=======//
+
+let romaniaPop = 20000000;
+let halfOfPopulation = romaniaPop / 2;
+let finlandPop = 6000000;
+let avgPop = 33000000;
+
+console.log(halfOfPopulation);
+//romaniaPop++;
+
+console.log(romaniaPop);
+console.log(romaniaPop > finlandPop);
+console.log(romaniaPop < avgPop); 
+
+//=======STRINGS AND TEMPLATE LITERALS=======//
+
+let description = `${country} is a country in ${continent}, and its ${romaniaPop} people speak ${language}`;
+console.log(description);
+
+if(romaniaPop > avgPop) {
+    console.log(`${country}'s population is above average.`);
+} else {
+    console.log(`${country}'s population is ${avgPop - romaniaPop} below average.`);
+}

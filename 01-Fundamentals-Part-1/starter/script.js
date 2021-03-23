@@ -40,7 +40,7 @@ age = 31;
 const birthYear = 1992;
 
 var job = 'programmer';
-job = 'teacher'; */
+job = 'teacher'; 
 
 //=======BASIC OPERATORS=======//
 
@@ -69,4 +69,61 @@ console.log(x);
 console.log(ageMarius > ageSarah);
 console.log(ageSarah >= 18);
 
-const isFullAge = ageSarah >= 18;
+const isFullAge = ageSarah >= 18; 
+
+//=======OPERATOR PRECEDENCE=======//
+
+const now = 2037;
+const ageMarius = now - 1992;
+const ageSarah = now - 2018;
+
+console.log(now - 1991 > now - 2018);
+
+let x, y;
+x = y = 25 - 10 - 5;
+console.log(x, y);
+
+const avgAge = (ageMarius + ageSarah) / 2;
+console.log(ageMarius, ageSarah, avgAge); 
+
+//=======STRINGS AND TEMPLATE LITERALS=======//
+
+const firstName = 'Marius';
+const job = 'tester';
+const birthYear = 1992;
+const year = 2077;
+
+const marius = 'I\'m ' + firstName + ', a ' + (year - birthYear) + 'yo ' + job + '!';
+console.log(marius);
+
+//Template literals
+
+const mariusNew = `I'm ${firstName} a ${year - birthYear} year old ${job}!`;
+console.log(mariusNew);
+
+console.log(`Just a regular string...`);
+
+console.log(`String with
+multiple
+lines`);*/
+
+//=======IF/ELSE STATEMENTS=======//
+
+const age = 15;
+
+if(age >= 18) {
+    console.log('Sarah can start her driving license 🚗');
+} else {
+    const yearLeft = 18 - age;
+    console.log(`Sarah is ${yearLeft} years too young 😭`);
+}
+
+const birthYear = 1992;
+let century;
+
+if(birthYear <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+}
+console.log(century);
